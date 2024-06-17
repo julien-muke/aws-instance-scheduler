@@ -13,15 +13,12 @@ In this hands-on demo, I’ll give you a brief overview of how Instance Schedule
 
 ## <a name="steps">☑️ Steps</a>
 
-* Create a Create NextJS App
-* Push Source Code to GitHub
-* Create S3 Bucket
-* Setting permissions for website access
-* Upload the app to S3 Bucket
-* Create CloudFront Distribution
-* Setup a CI/CD Pipeline with GitHub Actions and AWS
-* Set up IAM roles to connect GitHub Actions to actions in AWS
-* Configuring OpenID Connect in Amazon Web Services
+1. The Amazon CloudFormation template sets up an Amazon CloudWatch event at a customer-defined interval. This event invokes the Instance Scheduler Amazon Lambda function. During configuration, the user defines the Amazon Web Services Regions and accounts, as well as a custom tag that Amazon Web Services Instance Scheduler will use to associate schedules with applicable Amazon EC2 and Amazon RDS instances.
+
+2. These values are stored in Amazon DynamoDB, and the Lambda function retrieves them each time it runs. You can then apply the custom tag to applicable instances.
+
+3. During initial configuration of the Instance Scheduler, you define a tag key you will use to identify applicable Amazon EC2 and Amazon RDS instances. When you create a schedule, the name you specify is used as the tag value that identifies the schedule you want to apply to the tagged resource. For example, a user might use the solution’s default tag name (tag key) Schedule and create a schedule called uk-office-hours. To identify an instance that will use the uk-office-hours schedule, the user adds the Schedule tag key with a value of uk-office-hours.
+
 
 
 ## ➡️ Step 1 - Create and configure a Next.js 13 app
