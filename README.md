@@ -26,7 +26,7 @@ In this hands-on demo, I’ll give you a brief overview of how Instance Schedule
 To get started, we have Template Sample you can use for this demo, click the button below, this is going to open your AWS Console and it will launch a CloudFormation Template with all the details filled in.
 
 <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Finstance-scheduler-on-aws%2Flatest%2Finstance-scheduler-on-aws.template&redirectId=SolutionWeb" target="_blank">
-<img src="https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5e48af4c-7949-4ada-8ec4-948b8003e64a">
+<img src="https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5e48af4c-7949-4ada-8ec4-948b8003e64a" target="_blank">
 </a>
 
 
