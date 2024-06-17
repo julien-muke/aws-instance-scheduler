@@ -21,4 +21,4 @@ In this hands-on demo, I’ll give you a brief overview of how Instance Schedule
 
 
 
-## ➡️ Step 1 - Create and configure a Next.js 13 app
+## ➡️ Step 1 - Create CloudFormation
