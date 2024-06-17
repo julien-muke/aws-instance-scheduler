@@ -29,5 +29,28 @@ To get started, we have Template Sample you can use for this demo, click the but
 <img src="https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5e48af4c-7949-4ada-8ec4-948b8003e64a" target="_blank">
 </a>
 
+For this temaplate we will choose:
+
+1. "Choose an existing template" as the Prepare template
+2. "Amazon S3 URL" as the Template source
+3. Choose "Next"
+
+![CloudFormation-us-east-1(1)](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/d6b96bf4-faec-4880-8cba-47f64b18f569)
+
+4. Enter stack name `instance-scheduler`
+
+![Screenshot 2024-06-17 at 13 29 48](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/13f19876-057e-424c-bf68-29a076f41e08)
+
+5. Leave everything as default and click "Next"
+6. For "Configure stack options" leave everything as default and click "Next"
+7. Review the instance schedule
+8. Click i acknowledge that AWS CloudFormation might create AM resources with custom names.
+
+![Screenshot 2024-06-17 at 13 31 58](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/901f5301-1bed-415d-9038-95e2e3e51306)
+
+
+This is going to create a DynamoDB Table, some IAM Roles, a Lambda Function, it will set up KMS and SNS and CloudWatch.
+
+
 
 
