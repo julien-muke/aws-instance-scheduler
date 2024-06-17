@@ -50,6 +50,10 @@ For this temaplate we will choose:
 
 
 This is going to create a DynamoDB Table, some IAM Roles, a Lambda Function, it will set up KMS and SNS and CloudWatch.
+This might take several minutes to run you can always see how things are going by clicking on refresh.
+As you can see below our CloudFormation is completed.
+
+![Screenshot 2024-06-17 at 14 30 09](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/96093e34-a656-4d91-81f5-f2d863eb1005)
 
 
 
