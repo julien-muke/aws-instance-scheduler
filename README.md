@@ -97,12 +97,17 @@ Let's find a period that works for us for example: `office-hours` has a begintim
 
 ![Screenshot 2024-06-17 at 15 48 08](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/c939cecc-f733-4f3c-a4af-abacd41e0d1a)
 
+4. For this demo, i want to show you that the instance gets stopped at a particular time, i'm going to change this to just a few minutes away from where we are now, which will be `10:05` and then Save changes.
+
+![Screenshot 2024-06-17 at 16 01 46](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/c391dc97-14f2-4e35-b5d1-e7bf3a3ef64d)
 
 
+5. For the Schedule: 
+* Let's choose the schedule that we want, for example: `seattle-office-hours` hours that might actually work for me I'm on Seattle time (for this time to work make you sure you are in `us-east-1` regoin). 
+* If we scroll over we'll see the description and then we'll see that it's already configured to use the `office hours` period which is the one that i just updated, it's set to U.S Pacific time. You can change any of these to work for the time that you're in
 
 
-
-2. Choose 
+![Screenshot 2024-06-17 at 15 48 08](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/fb735606-adf8-441b-bff2-aa19c86c8310)
 
 
 
