@@ -145,7 +145,7 @@ To add an Amazon EC2 tag:
 
 ![Screenshot 2024-06-17 at 16 03 12](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5e24bb38-d47d-4ad0-96c5-85c0aef60174)
 
-3. Choose Add tag to the instance and provide the key-value pair you provided during deployment in my case:
+3. Choose Add tag to the instance and provide the key-value pair you provided during deployment, in my case:
 
 * Key = `Name`      Value = `Test Schedule` 
 * Key = `Schedule`  Value = `seattle-office-hours`
@@ -154,4 +154,20 @@ To add an Amazon EC2 tag:
 ![Screenshot 2024-06-17 at 16 03 52](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5c6e7682-3d09-442e-afaf-54e34a6894ab)
 
 
-4. 
+## ➡️ Step 5 - Testing that the scheduler automatically stops the instance
+
+Now I've got a few minutes before the 10:05 endtime starts, let's make sure this gets up and running and then we'll see that it's automatically shut down at 10:05.
+
+If we look at the clock this might vary a little bit from the time on AWS but it's currently 10:05
+
+![Screenshot 2024-06-17 at 16 06 07](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/d8ac779d-7d77-434f-848e-5d0a366e349d)
+
+If I do a refresh, as you can see below the instance is stopping at exact 10:05
+
+![Screenshot 2024-06-17 at 16 06 20](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/442a5381-4a96-4ca9-867d-637660f81b9b)
+
+
+All of that's happening automatically behind the scenes based on the Schedule and the Period that we set up and the Tag.
+The Lambda function is running stopping the instance and if i were to wait to the begintime in the Period of 9:00 am it would automatically get started again.
+
+This can be a great way to save you some money on evenings and weekends or just any scheduled time when you know you don't need your machine up and running.
