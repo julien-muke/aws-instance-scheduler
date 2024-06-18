@@ -9,15 +9,38 @@ In this hands-on demo, I’ll give you a brief overview of how Instance Schedule
 
 ![aws](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/c2dcf937-80b0-4a00-9c15-1c9934a6e764)
 
+## 📋 Overview
+
+1️⃣ The Amazon CloudFormation template sets up an Amazon CloudWatch event at a customer-defined interval. This event invokes the Instance Scheduler Amazon Lambda function. During configuration, the user defines the Amazon Web Services Regions and accounts, as well as a custom tag that Amazon Web Services Instance Scheduler will use to associate schedules with applicable Amazon EC2 and Amazon RDS instances.
+
+2️⃣ These values are stored in Amazon DynamoDB, and the Lambda function retrieves them each time it runs. You can then apply the custom tag to applicable instances.
+
+3️⃣ During initial configuration of the Instance Scheduler, you define a tag key you will use to identify applicable Amazon EC2 and Amazon RDS instances. When you create a schedule, the name you specify is used as the tag value that identifies the schedule you want to apply to the tagged resource. For example, a user might use the solution’s default tag name (tag key) Schedule and create a schedule called uk-office-hours. To identify an instance that will use the uk-office-hours schedule, the user adds the Schedule tag key with a value of uk-office-hours.
 
 
 ## <a name="steps">☑️ Steps</a>
 
-1. The Amazon CloudFormation template sets up an Amazon CloudWatch event at a customer-defined interval. This event invokes the Instance Scheduler Amazon Lambda function. During configuration, the user defines the Amazon Web Services Regions and accounts, as well as a custom tag that Amazon Web Services Instance Scheduler will use to associate schedules with applicable Amazon EC2 and Amazon RDS instances.
+The procedure for deploying this architecture on AWS consists of the following steps:
 
-2. These values are stored in Amazon DynamoDB, and the Lambda function retrieves them each time it runs. You can then apply the custom tag to applicable instances.
+Step 1. Launch the instance scheduler stack
 
-3. During initial configuration of the Instance Scheduler, you define a tag key you will use to identify applicable Amazon EC2 and Amazon RDS instances. When you create a schedule, the name you specify is used as the tag value that identifies the schedule you want to apply to the tagged resource. For example, a user might use the solution’s default tag name (tag key) Schedule and create a schedule called uk-office-hours. To identify an instance that will use the uk-office-hours schedule, the user adds the Schedule tag key with a value of uk-office-hours.
+    <br>* Launch the Amazon CloudFormation template into your AWS account
+    <br>* Enter values for the required parameter: Stack Name
+    <br>* Review the other template parameters, and adjust if necessary
+
+Step 2. Configure periods
+
+    <br>* Create a period and set the applicable fields for the period
+
+Step 3. Configure schedules
+
+    <br>* Create a schedule and set the applicable fields for the schedule
+
+Step 4. Tag your instances
+
+    <br>* Apply the custom tag to applicable resources
+
+Step 5. Test Instance Scheduler
 
 
 
