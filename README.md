@@ -108,7 +108,7 @@ Let's find a period that works for us for example: `office-hours` has a begintim
 ![Screenshot 2024-06-17 at 15 48 08](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/fb735606-adf8-441b-bff2-aa19c86c8310)
 
 
-## ## ➡️ Step 3 - Creating an EC2 instance and Tag your instances
+## ➡️ Step 3 - Creating an EC2 instance and Tag your instances
 
 Now we need an actual instance to start and stop using this scheduler.
 
