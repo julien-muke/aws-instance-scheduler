@@ -131,7 +131,7 @@ To launch an instance:
 5. From Amazon Machine Image (AMI), select an AMI that is marked Free Tier eligible.
 6. Under Key pair (login), choose Proceed without a key pair.
 7. Under Network settings, Create secrty group, choose "Allow SSH traffic from" and "Allow HTTP traffic from the internet"
-8. Keep the rest as default and choose "Launch instanc"
+8. Keep the rest as default and choose "Launch instance"
 
 
 ## ➡️ Step 4 - Creating an EC2 instance and Tag your instances
@@ -140,6 +140,8 @@ To star or stop EC2 instances from the dashboard, you can add the pre-determined
 
 To add an Amazon EC2 tag: 
 
-1. Select the instance you want to onboard to the dashboard
+1. Select the instance you want to onboard to the dashboard `Test Schedule`
+2. Select the Tags tab. Choose Manage tags. 
+3. Choose Add tag to the instance and provide the key-value pair you provided during deployment in my case it's `Name` = `Test Schedule` `Schedule` = `seattle-office-hours`.
 
 ![Screenshot 2024-06-17 at 16 03 12](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5e24bb38-d47d-4ad0-96c5-85c0aef60174)
