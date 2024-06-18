@@ -24,24 +24,23 @@ The procedure for deploying this architecture on AWS consists of the following s
 
 Step 1. Launch the instance scheduler stack
 
-    <br>* Launch the Amazon CloudFormation template into your AWS account
-    <br>* Enter values for the required parameter: Stack Name
-    <br>* Review the other template parameters, and adjust if necessary
+<br>* Launch the Amazon CloudFormation template into your AWS account
+<br>* Enter values for the required parameter: Stack Name
+<br>* Review the other template parameters, and adjust if necessary
 
 Step 2. Configure periods
 
-    <br>* Create a period and set the applicable fields for the period
+<br>* Create a period and set the applicable fields for the period
 
 Step 3. Configure schedules
 
-    <br>* Create a schedule and set the applicable fields for the schedule
+<br>* Create a schedule and set the applicable fields for the schedule
 
 Step 4. Tag your instances
 
-    <br>* Apply the custom tag to applicable resources
+<br>* Apply the custom tag to applicable resources
 
 Step 5. Test Instance Scheduler
-
 
 
 ## ➡️ Step 1 - Create CloudFormation
