@@ -105,7 +105,7 @@ Let's find a period that works for us for example: `office-hours` has a begintim
 * If we scroll over we'll see the description and then we'll see that it's already configured to use the `office hours` period which is the one that i just updated, it's set to U.S Pacific time. You can change any of these to work for the time that you're in
 
 
-![Screenshot 2024-06-17 at 15 48 08](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/fb735606-adf8-441b-bff2-aa19c86c8310)
+![Screenshot 2024-06-17 at 15 48 08](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/edf29e30-1562-4fa3-b6f3-56a3a48035b0)
 
 
 ## ➡️ Step 3 - Creating an EC2 instance and Tag your instances
