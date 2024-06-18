@@ -49,30 +49,60 @@ To get started, sign in to the AWS Management Console and click the button below
 
 1. The template is launched in the US East (N. Virginia) Region by default. To launch the Instance Scheduler in a different Region, use the region selector in the console navigation bar.
 2. On the Select Template page, verify that you selected the correct template and choose Next.
-3. On the Specify Details page, assign a name to your solution stack.
-4. Under Parameters, review the parameters for the template, and modify them as necessary. This solution uses the following default values.
 
 
 ![CloudFormation-us-east-1(1)](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/d6b96bf4-faec-4880-8cba-47f64b18f569)
 
-4. Enter stack name `instance-scheduler`
+3. On the Specify Details page, assign a name to your solution stack `instance-scheduler`
+4. Under Parameters, review the parameters for the template, and modify them as necessary. This solution uses the following default values, choose Next.
 
 ![Screenshot 2024-06-17 at 13 29 48](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/13f19876-057e-424c-bf68-29a076f41e08)
 
 5. Leave everything as default and click "Next"
 6. For "Configure stack options" leave everything as default and click "Next"
-7. Review the instance schedule
-8. Click i acknowledge that AWS CloudFormation might create AM resources with custom names.
+7. On the Review page, review and confirm the settings. Check the box acknowledging that the template will create Amazon Identity and Access Management (IAM) resources.
+8. Choose Create to deploy the stack.
 
 ![Screenshot 2024-06-17 at 13 31 58](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/901f5301-1bed-415d-9038-95e2e3e51306)
 
+You can view the status of the stack in the Amazon CloudFormation console in the Status column. You should see a status of CREATE_COMPLETE in roughly five (5) minutes
 
 This is going to create a DynamoDB Table, some IAM Roles, a Lambda Function, it will set up KMS and SNS and CloudWatch.
-This might take several minutes to run you can always see how things are going by clicking on refresh.
+
 As you can see below our CloudFormation is completed.
 
 ![Screenshot 2024-06-17 at 14 30 09](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/96093e34-a656-4d91-81f5-f2d863eb1005)
 
+
+## Step 2. Configure periods
+
+When you deploy the Amazon CloudFormation template, the solution creates an Amazon DynamoDB table that contains sample period rules and schedules that you can use as a reference to create your own custom period rules and schedules.
+
+To create a period rule, you can use the Amazon DynamoDB console:
+
+1. Navigate to Amazon DynamoDB console
+
+Remember CloudFormation created some tables for us, if you click on tables you should have one called `Instance-scheduler-ConfigTable-XXXXXXXXXX` click on the table.
+
+![Screenshot 2024-06-17 at 15 45 28](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/3574d87e-f820-4a6d-a1b1-3d0bfb53af03)
+
+2. Choose "Explore table items" to actually see the data in the table.
+
+![Screenshot 2024-06-17 at 15 46 06](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/3a98f0a4-0308-4b7d-8456-9bc6cbc7547f)
+
+
+3. Scrolling down, you will see Schedules and Periods that we can go configure. The recommendation is to take one that exists and just update it for what you need. 
+
+Let's find a period that works for us for example: `office-hours` has a begintime of `9:00` and endtime of `17:00` and applies Monday to Friday. Choose "Period" to modify it.
+
+![Screenshot 2024-06-17 at 15 48 08](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/c939cecc-f733-4f3c-a4af-abacd41e0d1a)
+
+
+
+
+
+
+2. Choose 
 
 
 
