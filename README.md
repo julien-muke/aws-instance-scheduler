@@ -41,17 +41,17 @@ Step 5. Test Instance Scheduler
 
 ## ➡️ Step 1 - Create CloudFormation
 
-To get started, we have Template Sample you can use for this demo, click the button below, this is going to open your AWS Console and it will launch a CloudFormation Template with all the details filled in.
+To get started, sign in to the AWS Management Console and click the button below to launch the aws-instance-scheduler Amazon CloudFormation template.
 
 <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Finstance-scheduler-on-aws%2Flatest%2Finstance-scheduler-on-aws.template&redirectId=SolutionWeb">
 <img src="https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5e48af4c-7949-4ada-8ec4-948b8003e64a" target="_blank">
 </a>
 
-For this temaplate we will choose:
+1. The template is launched in the US East (N. Virginia) Region by default. To launch the Instance Scheduler in a different Region, use the region selector in the console navigation bar.
+2. On the Select Template page, verify that you selected the correct template and choose Next.
+3. On the Specify Details page, assign a name to your solution stack.
+4. Under Parameters, review the parameters for the template, and modify them as necessary. This solution uses the following default values.
 
-1. "Choose an existing template" as the Prepare template
-2. "Amazon S3 URL" as the Template source
-3. Choose "Next"
 
 ![CloudFormation-us-east-1(1)](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/d6b96bf4-faec-4880-8cba-47f64b18f569)
 
