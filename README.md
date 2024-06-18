@@ -63,7 +63,7 @@ To get started, sign in to the AWS Management Console and click the button below
 
 ![Screenshot 2024-06-17 at 13 31 58](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/901f5301-1bed-415d-9038-95e2e3e51306)
 
-You can view the status of the stack in the Amazon CloudFormation console in the Status column. You should see a status of CREATE_COMPLETE in roughly five (5) minutes
+You can view the status of the stack in the Amazon CloudFormation console in the Status column. You should see a status of CREATE_COMPLETE in roughly five 5 minutes
 
 This is going to create a DynamoDB Table, some IAM Roles, a Lambda Function, it will set up KMS and SNS and CloudWatch.
 
@@ -101,7 +101,7 @@ Let's find a period that works for us for example: `office-hours` has a begintim
 
 
 5. For the Schedule: 
-* Let's choose the schedule that we want, for example: `seattle-office-hours` hours that might actually work for me I'm on Seattle time (for this time to work make you sure you are in `us-east-1` regoin). 
+* Let's choose the schedule that we want, for example: `seattle-office-hours` hours that might actually work for me I'm on Seattle time (for this time to work make you sure you are in `us-east-1` region). 
 * If we scroll over we'll see the description and then we'll see that it's already configured to use the `office hours` period which is the one that i just updated, it's set to U.S Pacific time. You can change any of these to work for the time that you're in
 
 
@@ -123,7 +123,7 @@ To launch an instance:
 
 ![Screenshot 2024-06-18 at 12 30 41](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/979e5f55-fac1-426f-8c58-4bb3d30bae9a)
 
-3. Under Name and tags, for Name, enter a descriptive name for your instance 
+3. Under Name and tags, for Name, enter a descriptive name for your instance `Test Schedule`
 
 ![Launch-an-instance-EC2-us-east-1(1)](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/b73689af-de1e-47ee-b76d-d659391b39a2)
 
