@@ -27,16 +27,14 @@ Step 1. Launch the instance scheduler stack
 <br>* Enter values for the required parameter: Stack Name
 <br>* Review the other template parameters, and adjust if necessary
 
-Step 2. Configure periods
+Step 2. Configure periods and schedules
 <br>* Create a period and set the applicable fields for the period
-
-Step 3. Configure schedules
 <br>* Create a schedule and set the applicable fields for the schedule
 
-Step 4. Tag your instances
+Step 3. Creating an EC2 instance and Tag your instances
 <br>* Apply the custom tag to applicable resources
 
-Step 5. Test Instance Scheduler
+Step 4. Test Instance Scheduler
 
 
 ## ➡️ Step 1 - Create CloudFormation
@@ -74,7 +72,7 @@ As you can see below our CloudFormation is completed.
 ![Screenshot 2024-06-17 at 14 30 09](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/96093e34-a656-4d91-81f5-f2d863eb1005)
 
 
-## Step 2. Configure periods
+## ➡️ Step 2 - Configure periods and schedules
 
 When you deploy the Amazon CloudFormation template, the solution creates an Amazon DynamoDB table that contains sample period rules and schedules that you can use as a reference to create your own custom period rules and schedules.
 
@@ -109,5 +107,30 @@ Let's find a period that works for us for example: `office-hours` has a begintim
 
 ![Screenshot 2024-06-17 at 15 48 08](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/fb735606-adf8-441b-bff2-aa19c86c8310)
 
+
+## ## ➡️ Step 3 - Creating an EC2 instance and Tag your instances
+
+Now we need an actual instance to start and stop using this scheduler.
+
+Let's create a new EC2 Instance, but if you already have one that's fine we just need to add a tag to.
+
+NOTE: The scheduler also works on RDS Instances.
+
+To launch an instance:
+
+1. Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+2. From the EC2 console dashboard, in the Launch instance pane, choose Launch instance.
+
+![Screenshot 2024-06-18 at 12 30 41](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/979e5f55-fac1-426f-8c58-4bb3d30bae9a)
+
+3. Under Name and tags, for Name, enter a descriptive name for your instance 
+
+![Launch-an-instance-EC2-us-east-1(1)](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/b73689af-de1e-47ee-b76d-d659391b39a2)
+
+4. Under Application and OS Images (Amazon Machine Image), we recommend that you choose Amazon Linux.
+5. From Amazon Machine Image (AMI), select an AMI that is marked Free Tier eligible.
+6. Under Key pair (login), choose Proceed without a key pair.
+7. Under Network settings, Create secrty group, choose "Allow SSH traffic from" and "Allow HTTP traffic from the internet"
+8. Keep the rest as default and choose "Launch instanc"
 
 
