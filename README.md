@@ -134,3 +134,12 @@ To launch an instance:
 8. Keep the rest as default and choose "Launch instanc"
 
 
+## ➡️ Step 4 - Creating an EC2 instance and Tag your instances
+
+To star or stop EC2 instances from the dashboard, you can add the pre-determined tag at any point. These changes update on the dashboard in approximately five minutes.
+
+To add an Amazon EC2 tag: 
+
+1. Select the instance you want to onboard to the dashboard
+
+![Screenshot 2024-06-17 at 16 03 12](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5e24bb38-d47d-4ad0-96c5-85c0aef60174)
