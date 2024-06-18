@@ -143,7 +143,8 @@ To add an Amazon EC2 tag:
 1. Select the instance you want to onboard to the dashboard `Test Schedule`
 2. Select the Tags tab. Choose Manage tags. 
 
-![Screenshot 2024-06-17 at 16 03 12](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/5e24bb38-d47d-4ad0-96c5-85c0aef60174)
+![Screenshot 2024-06-17 at 16 03 12](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/903e30f9-ec4d-4b0e-bd2b-941b68b43f95)
+
 
 3. Choose Add tag to the instance and provide the key-value pair you provided during deployment, in my case:
 
