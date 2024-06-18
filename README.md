@@ -171,3 +171,7 @@ All of that's happening automatically behind the scenes based on the Schedule an
 The Lambda function is running stopping the instance and if i were to wait to the begintime in the Period of `9:00` A.M it would automatically get started again.
 
 This can be a great way to save you some money on evenings and weekends or just any scheduled time when you know you don't need your machine up and running.
+
+## 💰 Cost
+
+All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
