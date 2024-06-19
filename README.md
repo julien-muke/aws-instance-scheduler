@@ -163,7 +163,7 @@ If we look at the clock this might vary a little bit from the time on AWS but it
 
 ![Screenshot 2024-06-17 at 16 06 07](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/d8ac779d-7d77-434f-848e-5d0a366e349d)
 
-If I do a refresh, as you can see below the instance is stopping at exact 10:05
+If I do a refresh, as you can see below the instance is stopping at exactly 10:05
 
 ![Screenshot 2024-06-17 at 16 06 20](https://github.com/julien-muke/aws-instance-scheduler/assets/110755734/442a5381-4a96-4ca9-867d-637660f81b9b)
 
